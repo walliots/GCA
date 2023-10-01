@@ -19,6 +19,8 @@ import SignInput from "../../components/SignInput";
 import EmailIcon from "../../assets/email.svg"
 import LockIcon from "../../assets/lock.svg"
 
+import HomeIcon from "../../assets/home.svg"
+
 export default () => {
 
     const navigation = useNavigation();
@@ -33,7 +35,9 @@ export default () => {
     }
     
     const handleSignClick = () => {
-
+        navigation.reset({
+            routes:[{name:'MainTab'}]
+        });
     }
 
     return (

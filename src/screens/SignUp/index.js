@@ -18,7 +18,8 @@ import EmailIcon from "../../assets/email.svg"
 import PersonIcon from "../../assets/person.svg"
 import LockIcon from "../../assets/lock.svg"
 
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from '@firebase/auth';
+// import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from '@firebase/auth';
+// import { app } from "../../firebase";
 
 export default () => {
 
@@ -35,16 +36,11 @@ export default () => {
         });
     }
 
-    const handleSignUp = () => {
-        // const auth = getAuth();
-        // auth
-        //     .createUserWithEmailAndPassword(email, password)
-        //     .then(userCredentials => {
-        //         const user = userCredentials.user;
-        //         console.log('Registered with:', user.email);
-        //     })
-        //     .catch(error => alert(error.message))
-    }
+    const handleSignUp = async () => {
+        navigation.reset({
+            routes: [{ name: 'SignIn' }]
+        });
+    };
 
     return (
         <Container>
@@ -57,12 +53,12 @@ export default () => {
                     value={email}
                     onChangeText={t => setEmailField(t)}
                 />
-                {/* <SignInput
+                <SignInput
                     IconSvg={PersonIcon}
                     placeholder="Digite seu nome"
                     value={name}
                     onChangeText={t => setNameField(t)}
-                /> */}
+                />
                 <SignInput
                     IconSvg={LockIcon}
                     placeholder="Digite sua senha"
