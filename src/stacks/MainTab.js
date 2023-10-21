@@ -21,6 +21,11 @@ export default () =>(
         <Tab.Screen name="Home" component={Home}/>
         <Tab.Screen name="Search" component={Search}/>
         <Tab.Screen name="Configuracao" component={Configuracao}/>
+        <Tab.Screen name="Licenca" component={Licenca}/>
+        <Tab.Screen name="Taxa" component={Taxa}/>
+        <Tab.Screen name="Educacao" component={Educacao}/>
         <Tab.Screen name="Suporte" component={Suporte}/>
+        <Tab.Screen name="Desempenho" component={Desempenho}/>
+        <Tab.Screen name="Comunidade" component={Comunidade}/>
     </Tab.Navigator>
 );

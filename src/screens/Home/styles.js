@@ -14,7 +14,26 @@ export const HeaderArea = styled.View`
 `;
 
 export const HeaderTitle = styled.Text`
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFF;
+`;
+
+export const TextTitle = styled.Text`
     font-size: 24px;
     font-weight: bold;
     color: #FFF;
 `;
+
+export const ServiceArea = styled.View`
+    width: 100%;
+    height: 90px;
+    background-color: #54B4C7;
+    flex-direction: row;
+    border-radius: 30px;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    justify-content: center;
+`;
+
