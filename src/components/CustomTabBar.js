@@ -34,7 +34,7 @@ export default ({state, navigation}) =>{
             <TabItem onPress={()=>goTo('Search')}>
                 <SearchIcon style={{opacity: state.index===1? 1 : 0.5}} width="30" height="30" fill="#FFFFFF"/>
             </TabItem>
-            <TabItem onPress={()=>goTo('Configuracao')}>
+            <TabItem onPress={()=>goTo('UserConfig')}>
                 <ConfigIcon style={{opacity: state.index===2? 1 : 0.5}}  width="30" height="30" fill="#FFFFFF"/>
             </TabItem>
             <TabItem onPress={()=>goTo('Suporte')}>
